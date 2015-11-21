@@ -1,0 +1,17 @@
+'name': 'gfm-todotxt'
+'scopeName': 'text.gfm-todotxt'
+'injectionSelector': 'source.gfm'
+'patterns': [
+  # Date attributes
+  {
+    'match': '[a-z]+:\\d{4}-\\d{2}-\\d{2}'
+    'name': 'gfm-todotxt.due'
+  }
+
+  # List or Board to place this item
+  {
+    'match': '#[A-Z]+:\\d{1,5}',
+    'name': 'gfm-todotxt.list'
+  }
+
+]
