@@ -1,11 +1,16 @@
 'name': 'gfm-todotxt'
 'scopeName': 'text.gfm-todotxt'
-'injectionSelector': 'source.gfm'
+'injectionSelector': 'source.gfm, text.plain'
 'patterns': [
   # Date attributes
   {
     'match': '[a-z]+:\\d{4}-\\d{2}-\\d{2}'
     'name': 'gfm-todotxt.due'
+  }
+
+  {
+    'match': '#TODAY:\\d{1,5}',
+    'name': 'gfm-todotxt.list-today'
   }
 
   # List or Board to place this item
@@ -14,4 +19,13 @@
     'name': 'gfm-todotxt.list'
   }
 
+  # tags
+  {
+    'match': '(?<=^|\\s|"|\'|\\(|\\[)(@)(\\w[-\\w:]*)(?=[\\s"\'.,;\\)\\]])'
+    'captures':
+      '1':
+        'name': 'variable.mention.gfm'
+      '2':
+        'name': 'string.username.gfm'
+  }
 ]
