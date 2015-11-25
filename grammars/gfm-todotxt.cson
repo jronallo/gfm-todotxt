@@ -9,13 +9,18 @@
   }
 
   {
-    'match': '#TODAY:\\d{1,5}',
+    'match': '#(TODAY|today|waiting|WAITING):\\d{1,5}',
     'name': 'gfm-todotxt.list-today'
+  }
+
+  {
+    'match': '#(DONE|done):\\d{1,5} .*$',
+    'name': 'gfm-todotxt.list-done'
   }
 
   # List or Board to place this item
   {
-    'match': '#[A-Z]+:\\d{1,5}',
+    'match': '#[a-zA-Z]+:\\d{1,5}',
     'name': 'gfm-todotxt.list'
   }
 
