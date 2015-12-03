@@ -8,6 +8,12 @@
     'name': 'gfm-todotxt.due'
   }
 
+  # zip it up
+  {
+    'match': 'YKK'
+    'name': 'gfm-todotxt.ykk'
+  }
+
   {
     'match': '#(TODAY|today|waiting|WAITING):\\d{1,5}',
     'name': 'gfm-todotxt.list-today'
