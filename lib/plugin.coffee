@@ -11,7 +11,7 @@ class Plugin extends Emitter
   constructor: (@repo, @imdoneView) ->
     super()
 
-    #todo:30 Maybe there's a way to highlight_dates on imdoneView initialization?
+    #todo:40 Maybe there's a way to highlight_dates on imdoneView initialization?
     @imdoneView.on 'board.update', =>
       @highlight_dates()
 
