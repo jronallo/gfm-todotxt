@@ -1,5 +1,3 @@
-#todo:0 0 due:2016-01-27
-#todo:10 1 due:2016-02-03
 ImdoneAtomHighlight = require './imdone-atom-highlight'
 {$, $$, $$$} = require 'atom-space-pen-views'
 {Emitter} = require 'atom'
@@ -13,7 +11,7 @@ class Plugin extends Emitter
   constructor: (@repo, @imdoneView) ->
     super()
 
-    #todo:0 Maybe there's a way to highlight_dates on imdoneView initialization?
+    #todo:30 Maybe there's a way to highlight_dates on imdoneView initialization?
     @imdoneView.on 'board.update', =>
       @highlight_dates()
 
