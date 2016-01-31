@@ -2,7 +2,8 @@
   "name": "gfm-todotxt",
   "main": "./lib/imdone-atom-highlight",
   "version": "0.0.1",
-  "description": "Adds colors for some todotxt syntax within Github Markdown",
+  "description": "Assortment of highlighting changes for gfm and imdone-atom",
+  "repository": "jronallo/gfm-todotxt",
   "engines": {
     "atom": ">=1.0.0 <2.0.0",
     "node": "*"
