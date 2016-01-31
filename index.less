@@ -18,4 +18,34 @@ atom-text-editor::shadow {
   .gfm-todotxt.ykk {
     color: @text-color-info;
   }
+
+}
+
+.imdone-atom .imdone-board-wrapper .imdone-board {
+  ol[data-list="doing"] {
+    li {
+      border-width: 2px !important;
+      border-color: blue !important;
+    }
+  }
+  .list-name-wrapper {
+    [data-list="today"], [data-list="doing"] {
+      color: hsl(113, 100%, 26%);
+    }
+  }
+
+  .task-overdue {
+    font-weight: bold;
+    background-color: red;
+    color: white;
+  }
+
+  .task-due {
+    color: red;
+  }
+
+  .task-coming-due {
+    color: yellow;
+  }
+
 }
