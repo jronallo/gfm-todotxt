@@ -39,4 +39,16 @@
       '2':
         'name': 'string.username.gfm'
   }
+
+  # notes for markdown slides
+  {
+    'match': '^\.note .*$'
+    'name': 'gfm-todotxt.dotnote'
+  }
+  {
+    'match': '^\.handout .*$'
+    'name': 'gfm-todotxt.dothandout'
+  }
+
+
 ]
