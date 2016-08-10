@@ -1,6 +1,6 @@
 'name': 'gfm-todotxt'
 'scopeName': 'text.gfm-todotxt'
-'injectionSelector': 'source.gfm, text.plain'
+'injectionSelector': 'source.gfm, text.plain, text.md'
 'patterns': [
   # Date attributes
   {
@@ -48,6 +48,11 @@
   {
     'match': '^\.handout .*$'
     'name': 'gfm-todotxt.dothandout'
+  }
+
+  {
+    'match': '^\.---.*$'
+    'name': 'gfm-todotxt.fakebreak'
   }
 
 
