@@ -1,7 +1,7 @@
 {
   "name": "gfm-todotxt",
   "main": "./lib/imdone-atom-highlight",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Assortment of highlighting changes for gfm and imdone-atom",
   "repository": "jronallo/gfm-todotxt",
   "engines": {
