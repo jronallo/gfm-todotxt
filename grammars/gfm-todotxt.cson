@@ -20,7 +20,7 @@
   }
 
   {
-    'match': '#(DONE|done):\\d{1,5} .*$',
+    'match': '#(DONE|done|didnt|dont):\\d{1,5} .*$',
     'name': 'gfm-todotxt.list-done'
   }
 
