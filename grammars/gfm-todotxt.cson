@@ -55,5 +55,14 @@
     'name': 'gfm-todotxt.fakebreak'
   }
 
+  {
+    'begin': '\\?{3}'
+    'end': '\-{3}'
+    'endCaptures':
+      '0':
+        'name': 'gfm-todotxt.remark-note-divider'
+    'name': 'gfm-todotxt.remark-note'
+  }
+
 
 ]
